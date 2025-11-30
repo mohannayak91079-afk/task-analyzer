@@ -92,29 +92,6 @@ Suggests top 3 tasks based on the selected strategy.
 
 **Response:** JSON array of top 3 sorted tasks with added "score" and "explain" fields.
 
-## Project Structure
-
-```
-taskanna/
-├── backend/                 # Django project settings
-│   ├── settings.py         # Django settings
-│   ├── urls.py             # Main URL configuration
-│   └── wsgi.py             # WSGI configuration
-├── tasks/                  # Django app for task management
-│   ├── models.py           # Task model
-│   ├── views.py            # API views for analyze and suggest
-│   ├── scoring.py          # Task scoring logic
-│   ├── urls.py             # App URL configuration
-│   └── migrations/         # Database migrations
-├── frontend/               # Static frontend files
-│   ├── index.html          # Main HTML page
-│   ├── styles.css          # CSS styles
-│   └── script.js           # JavaScript for API calls
-├── manage.py               # Django management script
-├── requirements.txt        # Python dependencies
-└── db.sqlite3              # SQLite database
-```
-
 ## Technologies Used
 
 - **Backend**: Django 4.2+, Python
@@ -128,6 +105,7 @@ taskanna/
 2. Create a feature branch
 3. Make your changes
 4. Submit a pull request
+
 
 
 
