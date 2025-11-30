@@ -17,7 +17,7 @@ A web application for analyzing and prioritizing tasks based on various strategi
 1. Clone the repository:
    ```
    git clone <repository-url>
-   cd taskanna
+   cd task-analyzer
    ```
 
 2. Install dependencies:
@@ -129,6 +129,5 @@ taskanna/
 3. Make your changes
 4. Submit a pull request
 
-## License
 
-This project is licensed under the MIT License.
+
