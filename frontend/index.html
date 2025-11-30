@@ -1,0 +1,39 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Task Analyzer</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Task Analyzer</h1>
+    </header>
+    <main>
+      <div class="content-wrapper">
+        <section class="input-section">
+          <label for="strategySelect">Analysis Strategy:</label>
+          <select id="strategySelect" class="strategy-select">
+            <option value="default">Default (Score-based)</option>
+            <option value="priority">Priority-based</option>
+            <option value="due_date">Due Date-based</option>
+          </select>
+          <textarea id="taskInput" placeholder="Paste JSON here"></textarea>
+          <div class="button-group">
+            <button onclick="analyze()" class="btn btn-primary">Analyze</button>
+            <button onclick="suggest()" class="btn btn-secondary">Suggest</button>
+          </div>
+        </section>
+        <section class="results-section">
+          <h2>Results</h2>
+          <div id="results" class="task-list"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
